@@ -25,8 +25,8 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul>
-                <li>Grand Valley State University</li>
-                <li>Grand Haven High School</li>  
+                <li>Grand Valley State University:</li>
+                <li>B.S. in Computer Information Systems (In progress)</li>  
             </ul>
         )
     },
@@ -36,7 +36,7 @@ const TAB_DATA = [
         content: (
             <ul>
                 <li>MESA Enterprises: Software Engineer Intern</li>
-                <li>CompanionAI(GVSU Capstone): Full Stack Developer</li>
+                <li>CompanionAI (GVSU Capstone): Full Stack Developer</li>
                 <li>GVSU: STEM Summer Counselor</li>
             </ul>
         )
@@ -59,8 +59,9 @@ const AboutSection = () => {
                 </div>
                 <div className='md:w-1/2 mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-                    <p className="text-base lg:text-lg" > Information about me for reference
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <p className="text-base lg:text-lg" > I am an aspiring software developer with a background in computer science. 
+                        I have a passion for web development and I am always looking for new technologies to learn. 
+                
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton 
