@@ -6,6 +6,7 @@ export default function ProjectsPage(): JSX.Element {
                 <main className="flex min-h-screen flex-col bg-black">
                     <Navbar />
                         <div className="container mt-24 mx-auto px-12 py-4">
+                            <h1>UNDER CONSTRUCTION</h1>
                         </div>
                 </main>
             );
