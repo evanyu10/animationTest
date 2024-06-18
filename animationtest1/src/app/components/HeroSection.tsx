@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import profilePic from "public/images/evan-transp.png.png"
+import profilePic from "../../../public/images/evan-transp.png.png"
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {

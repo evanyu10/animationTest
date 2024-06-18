@@ -2,7 +2,7 @@
 
 import React, {useTransition, useState} from 'react';
 import Image from 'next/image';
-import headshotImage from 'public/images/headshotpic.png';
+import headshotImage from '../../../public/images/headshotpic.png';
 import TabButton from './TabButton';
 import { title } from 'process';
 
