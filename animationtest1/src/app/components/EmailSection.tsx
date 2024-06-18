@@ -1,8 +1,8 @@
 "use client"
 
 import React from 'react'
-import GithubIcon from '../images/github-icon.svg'
-import LinkedInIcon from '../images/linkedin-icon.svg'
+import GithubIcon from 'public/images/github-icon.svg'
+import LinkedInIcon from 'public/images/linkedin-icon.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import { headers } from 'next/headers'
@@ -47,10 +47,10 @@ const EmailSection = () => {
         I will try my best to get back to you as soon as possible! {" "}
         </p>
         <div className="socials flex flex-row gap-2">
-            <Link href="github.com">
+            <Link href="github.com/evanyu10">
                 <Image src={GithubIcon} alt="Github Icon"/>
             </Link>
-            <Link href="linkedin.com"> 
+            <Link href="linkedin.com/evanayu"> 
                 <Image src={LinkedInIcon} alt="Linkedin Icon" />
             </Link>
         </div>
