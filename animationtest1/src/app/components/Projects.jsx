@@ -16,7 +16,7 @@ const Projects = () => {
       }}>
       <h2 className="font-semibold text-3xl sm:text-xl lg:text-4xl mb-4 text-center">My Work</h2>
       <p className="text-xl text-center">Please check out some of the work that I have done!</p>
-      <a href="/projectpage">
+      <a href="/">
         <button className="px-6 mt-4 p-3 w-full sm:w-fit rounded-full mr-4 mb-4 sm:mb-0 bg-gradient-to-br from-purple-200 to-purple-500 hover:bg-slate-200 hover:text-black text-white">
             Go to Projects
         </button>
