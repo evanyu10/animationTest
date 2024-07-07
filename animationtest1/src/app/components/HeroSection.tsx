@@ -1,17 +1,18 @@
-"use client"
+'use client';
 
 import React from "react";
 import Image from "next/image";
 import profilePic from "../../../public/images/evan-transp.png.png"
+import NavLink from "./NavLink";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="bg-gray-200 p-4 rounded-lg shadow-lg">
         <div className="grid grid-cols-1 sm:grid-cols-12">
             <div className="col-span-7 place-self-center text-center sm:text-left">
-                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-100 to-purple-500 ">
+                <h1 className="text-black mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-500 ">
                     Hello I am {" "}
                     </span>
                     <br></br>
@@ -32,20 +33,10 @@ const HeroSection = () => {
                        speed={50}
                        repeat={0}
                        />
-                    </h1>
-                <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+                </h1>
+                <p className="text-[#121212] text-base sm:text-lg mb-6 lg:text-xl">
                     I am a web developer
                 </p>
-                <div>
-                    <button className="px-6 p-3 w-full sm:w-fit rounded-full mr-4 mb-4 sm:mb-0 bg-gradient-to-br from-purple-200 to-purple-500 hover:bg-slate-200 hover:text-black text-white">
-                        Hire Me
-                        </button>
-                    <a href="/documents/Evan_Yu_Resume.pdf" download>
-                        <button className="px-1 p-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-200 to-purple-500 hover:bg-slate-800">
-                            <span className="block bg-[#121212] hover:bg-skate-800 rounded-full px-5 py-2">Download CV </span>
-                        </button>
-                    </a>
-                </div>
             </div>
             <div className="col-span-5 place-self-center mt-4 lg:mt-0">
                 <div className="rounded-full bg-[#bd79fc] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
@@ -59,8 +50,28 @@ const HeroSection = () => {
                 </div>
             </div>
         </div>
+        <div className="text-center mt-4">
+            
+        <button 
+    className="px-6 p-3 w-full sm:w-fit rounded-full mr-4 mb-4 sm:mb-0 bg-gradient-to-br from-purple-200 to-purple-500 hover:bg-slate-200 hover:text-black text-white"
+    onClick={(e) => {
+        e.preventDefault();
+        const element = document.getElementById('contact');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }}
+>
+    Hire Me
+</button>
+
+            <a href="/documents/Evan_Yu_Resume.pdf" download>
+                <button className="px-1 p-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-200 to-purple-500 hover:bg-slate-800">
+                    <span className="block bg-gray-200 hover:bg-purple-200 rounded-full px-5 py-2">Download CV </span>
+                </button>
+            </a>
+        </div>
     </section>
-    
   );
 };
 

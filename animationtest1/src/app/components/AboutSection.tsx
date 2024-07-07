@@ -52,13 +52,13 @@ const AboutSection = () => {
         });
     }
     return (
-        <section className="text-white">
+        <section id="about" className="">
             <div className='flex flex-col md:flex-row items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16'>
                 <div className='md:w-1/2 md:mr-8'>
                     <Image src={headshotImage} alt='Headshot' width={300} height={500}/>
                 </div>
                 <div className='md:w-1/2 mt-4 md:mt-0 text-left flex flex-col h-full'>
-                    <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+                    <h2 className="text-4xl font-bold mb-4">About Me</h2>
                     <p className="text-base lg:text-lg" > I am an aspiring software developer with a background in computer science. 
                         I have a passion for web development and I am always looking for new technologies to learn. 
                 
